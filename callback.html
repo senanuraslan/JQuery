@@ -1,0 +1,52 @@
+  <!-- <!DOCTYPE html>
+  <html>
+      <head>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script>
+              $(document).ready(function(){
+                                $("button").click(function(){
+                                                  $("p").hide("slow",function(){
+                                                              alert("PARAGRAF SIMDI GİZLENDİ");
+                                                              });
+                                                  });
+                                });
+              </script>
+      </head>
+      <body>
+   
+          <button>GIZLE</button>
+          <p>Turkcell'le bağlan hayata!</p>
+   
+      </body>
+  </html> -->
+
+  <!-- text(), html() ve val() Metotları İçin Bir Geriçağırma (callback) Fonksiyonu -->
+  <!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                              $("#btn1").click(function(){
+                                               $("#test1").text(function(i,origText){
+                                                                return "ESKI METIN: " + origText + " YENI METIN: TURKCELL GELECEGI YAZANLAR";
+                                                                });
+                                               });
+                              
+                              $("#btn2").click(function(){
+                                               $("#test2").html(function(i,origText){
+                                                                return "ESKI html: " + origText + " YENI html: TURKCELL GELECEGI YAZANLAR 2015";
+                                                                });
+                                               });
+                              
+                              });
+            </script>
+    </head>
+    
+    <body>
+        <p id="test1">GELECEGI YAZANLAR</p>
+        <p id="test2">GELECEGI YAZANLAR 2015</p>
+        <button id="btn1">ESKI/YENI METIN</button>
+        <button id="btn2">ESKI/YENI  HTML</button>
+    </body>
+</html>

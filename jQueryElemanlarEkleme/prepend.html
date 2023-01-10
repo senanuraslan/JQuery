@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                              $("#btn1").click(function(){
+                                               $("p").prepend("<b>ONE EKLENEN METIN</b>. ");
+                                               });
+                              $("#btn2").click(function(){
+                                               $("ol").prepend("<li>ONE EKLENEN LISTE ELEMANI</li>");
+                                               });
+                              });
+            </script>
+    </head>
+    <body>
+        
+        <p>BIRINCI SATIR</p>
+        <p>IKINCI SATIR</p>
+        <ol>
+            <li>LISTE ELEMANI 1</li>
+            <li>LISTE ELEMANI 2</li>
+            <li>LISTE ELEMANI 3</li>
+        </ol>
+        
+        <button id="btn1">ONE METIN EKLE</button>
+        <button id="btn2">ONE LISTE ELEMANI EKLE</button>
+        
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            function appendText() {
+                var metin1 = "<p>Metin.</p>";              //  HTML
+                var metin2 = $("<p></p>").text("Metin.");  //  jQuery
+                var metin3 = document.createElement("p");
+                metin3.innerHTML = "Metin.";               // DOM
+                $("body").append(metin1, metin2, metin3);     // yeni elemanlar
+            }
+        </script>
+    </head>
+    <body>
+ 
+        <p>ILK SATIR</p>
+        <button onclick="appendText()">METIN EKLE</button>
+ 
+    </body>
+</html>

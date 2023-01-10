@@ -1,0 +1,37 @@
+<!-- 
+addClass() – Seçilen elemanlara bir ya da daha fazla sınıf ekler.
+removeClass() - Seçilen elemanlardan bir ya da daha fazla sınıfı siler.
+toggleClass() – Seçilen elemanlara sınıf ekleme/silme işlemlerini peş peşe yapar.
+css() – Stil özelliklerine erişir ya da atama yapar. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                              $("button").click(function(){
+                                                $("#bol").addClass("xx pink");
+                                                });
+                              });
+            </script>
+        <style>
+            .xx
+            {
+                font-weight:bold;
+                font-size:xx-large;
+            }
+        .pink
+        {
+            color:pink;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <div id="bol">O KADAR HIZLI DUSER KI MARTI</div>
+        <div id="bolx">ASILI KALIR BEYAZLIGI HAVADA </div>
+        <br>
+        <button>ILK SATIRA SINIFLARI EKLE</button>
+        
+    </body>
+</html>

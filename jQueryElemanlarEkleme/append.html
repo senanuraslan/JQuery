@@ -1,0 +1,34 @@
+<!--
+append() – içeriği seçilen elemanların sonuna ekler.
+prepend() – içeriği seçilen elemanların başına ekler.
+after() – içeriği seçilen elemanlardan sonra ekler.
+before() - içeriği seçilen elemanlardan önce ekler. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                              $("#btn1").click(function(){
+                                               $("p").append("<b>EKLENEN METIN</b>.");
+                                               });
+ 
+                              $("#btn2").click(function(){
+                                               $("ol").append("<li>EKLENEN ELEMAN</li>");
+                                               });
+                              });
+            </script>
+    </head>
+ 
+    <body>
+        <p>BIRINCI SATIR</p>
+        <p>IKINCI SATIR</p>
+        <ol>
+            <li>1.LISTE ELEMANI</li>
+            <li>2.LISTE ELEMANI</li>
+            <li>3.LISTE ELEMANI</li>
+        </ol>
+        <button id="btn1">METIN EKLE</button>
+        <button id="btn2">LISTE ELEMANI EKLE</button>
+    </body>
+</html>

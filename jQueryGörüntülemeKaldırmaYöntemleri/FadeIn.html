@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                              $("button").click(function(){
+                                                $("#x1").fadeIn();
+                                                $("#x2").fadeIn("slow");
+                                                $("#x3").fadeIn(3000);
+                                                });
+                              });
+            </script>
+    </head>
+    
+    <body>
+        <p>
+        <p> fadeIn() - CESITLI PARAMETRELERLE DEMO</p>
+        <button>KUTULARI GETIRMEK ICIN TIKLA</button>
+        <br><br>
+        <div id="x1" style="width:60px;height:70px;display:none;background-color:pink;"></div><br>
+        <div id="x2" style="width:60px;height:70px;display:none;background-color:gray;"></div><br>
+        <div id="x3" style="width:60px;height:70px;display:none;background-color:red;"></div>
+        
+    </body>
+</html>

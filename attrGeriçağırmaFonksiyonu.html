@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                              $("button").click(function(){
+                                                $("#gy").attr("href", function(i,origValue){
+                                                               return origValue + "/konu/android";
+
+                                                               });
+                                                });
+                              });
+            </script>
+    </head>
+ 
+    <body>
+        <a id="gy" href="https://gelecegiyazanlar.turkcell.com.tr">Geleceği Yazanlar</a>
+        <button>href DEGERINI DEGISTIR</button>
+</body>
+</html>

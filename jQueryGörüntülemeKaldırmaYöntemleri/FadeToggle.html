@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                              $("button").click(function(){
+                                                $("#x1").fadeToggle();
+                                                $("#x2").fadeToggle("slow");
+                                                $("#x3").fadeToggle(3000);
+                                                });
+                              });
+            </script>
+    </head>
+    <body>
+        
+        <p>fadeToggle()-fadeIn() ve fadeOut() ARASINDA GIDIS-GELIS</p>
+        <button>GECISLER ICIN TIKLA</button>
+        <br><br>
+        
+        <div id="x1" style="width:40px;height:40px;background-color:lightblue;"></div>
+        <br>
+        <div id="x2" style="width:40px;height:40px;background-color:gray;"></div>
+        <br>
+        <div id="x3" style="width:40px;height:40px;background-color:red;"></div>
+        
+    </body>
+</html>

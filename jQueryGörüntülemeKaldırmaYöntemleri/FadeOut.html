@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                              $("button").click(function(){
+                                                $("#x1").fadeOut();
+                                                $("#x2").fadeOut("slow");
+                                                $("#x3").fadeOut(3000);
+                                                });
+                              });
+            </script>
+    </head>
+    
+    <body>
+        <p>fadeOut() -DENEME</p>
+        <button>KUTULARI YOK ET</button>
+        <br><br>
+        <div id="x1" style="width:50px;height:50px;background-color:blue;"></div><br>
+        <div id="x2" style="width:50px;height:50px;background-color:green;"></div><br>
+        <div id="x3" style="width:50px;height:50px;background-color:black;"></div>
+        
+    </body>
+</html>
